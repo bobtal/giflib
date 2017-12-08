@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '1.5.8.RELEASE'
+}
+
+group 'com.bobantalevski'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    //compile 'org.springframework:spring-webmvc:4.2.2.RELEASE'
+
+    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web
+    compile 'org.springframework.boot:spring-boot-starter-thymeleaf'
+    // https://mvnrepository.com/artifact/net.sourceforge.nekohtml/nekohtml
+    runtime 'net.sourceforge.nekohtml:nekohtml:1.9.22'
+    compile 'org.thymeleaf.extras:thymeleaf-extras-java8time:2.1.0.RELEASE'
+    // https://mvnrepository.com/artifact/org.hashids/hashids
+    compile 'org.hashids:hashids:1.0.3'
+
+}
